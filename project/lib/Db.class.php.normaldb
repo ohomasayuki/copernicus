@@ -1,0 +1,232 @@
+<?
+class DbMysql {
+  var $port = '3306';
+  var $connection = null;
+  function  _query($sql){
+     return mysql_query($sql);
+     //return mysql_query($sql, $this->connection);
+  }
+  function _fetch($result){
+    return mysql_fetch_assoc($result);
+  }
+  function num_rows($result){
+    return mysql_num_rows($result);
+  }
+  function _connect($host, $port, $dbname, $user, $password){
+	debug("$host, $port, $dbname, $user, $password");
+	if( $port ){
+		$host .= ':' . $port;
+	}
+	$con = mysql_connect ($host, $user, $password);
+       //or die ("couldn't connetc to MySql".$this->_error());
+    $res = mysql_select_db ($dbname,$con);
+      //or die ("Couldn't Connect to table'$db_name'".$this->_error());
+	if( ! $res ) return false;
+	return $con;
+  }
+  function _close(){
+    return @mysql_close();
+  }
+  function _error(){
+    return mysql_error();
+  }
+  function _fetch_all( $result ){
+    $data = array();
+    while ($row = mysql_fetch_assoc($result)) {
+      $data[] = $row;
+    }
+    mysql_free_result($result);
+    return $data;
+  }
+  function _escape($s){
+    return mysql_escape_string($s);
+  }
+}
+class DbPostgres {
+  var $port = '5432';
+  var $connection = null;
+  function  _query($sql){
+     return @pg_query($this->connection, $sql);
+  }
+  function _fetch($result){
+    return pg_fetch_assoc($result);
+  }
+  function num_rows($result){
+    return pg_num_rows($result);
+  }
+  function _connect($host, $port, $dbname, $user, $password){
+    return pg_connect('host='.$host.' port='.$port.' dbname='.$dbname.' user='.$user.' password='.$password);
+  }
+  function _close(){
+    return pg_close($this->connection);
+  }
+  function _error(){
+    return pg_last_error();
+  }
+  function _fetch_all( $result ){
+    return pg_fetch_all( $result );
+  }
+  function _escape($s){
+    return pg_escape_string($s);
+  }
+}
+//class Db extends DbPostgres{
+class Db extends DbMysql{
+var $debug_on = true; // デバッグメッセージ表示用
+var $host = "127.0.0.1";
+var $dbname = "";
+var $user = "";
+var $port = "";
+var $password = "";
+var $debug_func = "debug"; // デバッグ用ファンクション名
+//var $db_encoding = 'EUC-JP'; // DBエンコーディング
+var $db_encoding = 'UTF-8'; // DBエンコーディング
+var $php_encoding = 'UTF-8'; // PHPエンコーディング
+var $is_only_select = false; // SELECT以外は発行しない。スレーブ用やテスト用に使用。
+function connect(){
+  $con = $this->_connect( $this->host, $this->port, $this->dbname, $this->user, $this->password);
+  if (!$con){
+    //die ("couldn't connet [".$this->error().']');
+	return false;
+  }
+  $this->connection = $con;
+  return $con;
+}
+function isSelect($sql){
+  return stripos(trim($sql), 'select') === 0;
+}
+function query($sql, $h=null) {
+  if( $h ) $sql = $this->bind($sql, $h);
+  if( $this->is_only_select ){
+    // スレーブDBへのクエリーの場合、SELECT以外はスキップ
+    if( ! $this->isSelect($sql) ){
+	  debug('SKIP: only select mode. ['.$sql.']');
+	  return true;
+	}
+  }
+  $this->connect();
+  $result = $this->_query($sql);
+  $this->close();
+  $this->debug('sql:'.$sql);
+  if( !$result ) {
+    $this->debug( get_class($this).'::query error:'.$this->error() );
+    trigger_error('DB ERROR['.$sql.']'.$this->error(), E_USER_WARNING);
+  }
+  return $result;
+}
+function close(){
+  $this->_close();
+  $this->connection = null;
+}
+function debug($message) {
+  if ( mb_strlen($message) > 255 ) $message = mb_strpos($message, 0, 255);
+  debug( $message );
+}
+function error() {
+  return $this->_error();
+}
+function fetch($result){
+  return $this->_fetch($result);
+}
+function bind($sql, $h=null){
+  if( ! $h ) return $sql;
+  foreach($h as $k => $v){
+    $sql = str_replace(':'.$k, $this->escape($v), $sql);
+  }
+  return $sql;
+}
+
+function count($table, $condition, $condition_h = null) {
+  $condition = $this->bind($condition, $condition_h);
+  $sql = 'select count(*) as count from ' . $table . ' where ' . $condition;
+  $d = $this->select($sql);
+  return $d[0][0];
+}
+
+function exists($table, $condition, $condition_h = null) {
+  $condition = $this->bind($condition, $condition_h);
+  $sql = 'select * from ' . $table . ' where ' . $condition . ' limit 1';
+  return $this->select($sql) ? true : false;
+}
+function select1($sql, $h = null) {
+	$list = $this->select($sql, $h);
+	return $list ? $list[0] : null;
+}
+function select($sql, $h = null) {
+  $sql = $this->bind($sql, $h);
+  $result = $this->_fetch_all( $this->query($sql, $h) );
+  if( !$result ){
+    $this->debug('select:false');
+  } else {
+    $this->debug('select:hit='.count($result).'');
+  }
+  return $result;
+}
+function insert($table, $h) {
+  $names = $values = "";
+  foreach($h as $k => $v){
+    if($names) $names .= ',';
+    if($values) $values .= ',';
+    $names .= $k;
+    $values .= $this->escape($v);
+  }
+  $sql = 'INSERT INTO '.$table.' ('.$names.') VALUES ('.$values.')';
+  $result = $this->query($sql);
+  if($result===FALSE){
+    echo "error=[".$this->error()."]";
+  }
+  return $result;
+}
+function update($table, $h, $condition, $condition_h=null) {
+  _log($condition);
+  _log($condition_h);
+  $condition = $this->bind($condition, $condition_h);
+  $names = "";
+  foreach($h as $k => $v){
+    if($names) $names .= ',';
+    $names .= "$k=" . $this->escape($v);
+  }
+  $sql = 'UPDATE '.$table.' SET '.$names.' WHERE ' . $condition;
+  $result = $this->query($sql);
+  return $result;
+}
+function delete($table, $condition, $condition_h=null){
+  $condition = $this->bind($condition, $condition_h);
+  $sql = 'DELETE FROM ' . $table . ' WHERE ' . $condition;
+  $result = $this->query($sql);
+  if($result===FALSE){
+    echo "error=".$this->error();
+  }
+  return $result;
+}
+function escape($v){
+  if( strtolower($v) == 'now()'){
+    return $v;
+  }else if($v===null || strtolower($v)=='null'){
+    return 'null';
+  }
+  return "'".$this->_escape($v)."'";
+}
+function convertFromDb($s){
+  return $s;//mb_convert_encoding($s, $this->php_encoding, $this->db_encoding);
+}
+function convertToDb($s){
+  return $s;//mb_convert_encoding($s, $this->db_encoding, $this->php_encoding);
+}
+/**
+ * 'YYYY-MM-DD HH:II:SS'の文字列をunixタイム値に変換
+ *@param string タイムスタンプ文字列
+ *@return int UNIXタイム値
+ */
+function dateToUnixtime($date){
+  $year = substr($date,0,4);
+  $month = substr($date,5,2);
+  $day = substr($date,8,2);
+  if( ! $day ) $day = 1;
+  $hour = substr($date,11,2);
+  $minute = substr($date,14,2);
+  $second = substr($date,17,2);
+  return mktime($hour, $minute, $second, $month, $day, $year);
+}
+}
+
