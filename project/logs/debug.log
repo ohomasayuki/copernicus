@@ -1,1 +1,309 @@
 
+[04/28 00:23:23] :start /tmp/copernicus/project/htdocs/test.php
+[04/28 00:23:23] req:Array
+(
+)
+
+[04/28 00:23:23] :127.0.0.1, 3306, yoshida, yoshida, 
+[04/28 00:23:23] :[/usr/local/apache2/htdocs/tmp/copernicus/project/lib/Db.class.php line21:2]mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'yoshida'@'localhost' (using password: NO)
+[04/28 00:23:23] :[/usr/local/apache2/htdocs/tmp/copernicus/project/lib/Db.class.php line23:2]mysql_select_db(): supplied argument is not a valid MySQL-Link resource
+[04/28 00:23:23] :127.0.0.1, 3306, blt, blt, bltpass
+[04/28 00:23:23] :[/usr/local/apache2/htdocs/tmp/copernicus/project/lib/Db.class.php line21:2]mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'blt'@'localhost' (using password: YES)
+[04/28 00:23:23] :[/usr/local/apache2/htdocs/tmp/copernicus/project/lib/Db.class.php line23:2]mysql_select_db(): supplied argument is not a valid MySQL-Link resource
+[04/28 00:24:03] :start /tmp/copernicus/project/htdocs/test.php
+[04/28 00:24:03] req:Array
+(
+)
+
+[04/28 00:24:03] :127.0.0.1, 3306, yoshida, yoshida, 
+[04/28 00:24:03] :[/usr/local/apache2/htdocs/tmp/copernicus/project/lib/Db.class.php line21:2]mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'yoshida'@'localhost' (using password: NO)
+[04/28 00:24:03] :[/usr/local/apache2/htdocs/tmp/copernicus/project/lib/Db.class.php line23:2]mysql_select_db(): supplied argument is not a valid MySQL-Link resource
+[04/28 00:24:03] :127.0.0.1, 3306, blt, blt, bltpass
+[04/28 00:24:03] :[/usr/local/apache2/htdocs/tmp/copernicus/project/lib/Db.class.php line21:2]mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'blt'@'localhost' (using password: YES)
+[04/28 00:24:03] :[/usr/local/apache2/htdocs/tmp/copernicus/project/lib/Db.class.php line23:2]mysql_select_db(): supplied argument is not a valid MySQL-Link resource
+[04/28 00:27:54] :start /tmp/copernicus/project/htdocs/test.php
+[04/28 00:27:54] req:Array
+(
+)
+
+[04/28 00:27:54] :127.0.0.1, 3306, myapps_development, root, 
+[04/28 00:27:54] :sql:set character set utf8
+[04/28 00:27:54] :sql:set names utf8
+[04/28 00:27:54] :[/usr/local/apache2/htdocs/tmp/copernicus/project/lib/mobile/Mobile.inc.php line34:8]Use of undefined constant CARRIER_I - assumed 'CARRIER_I'
+[04/28 00:27:54] :[/usr/local/apache2/htdocs/tmp/copernicus/project/lib/mobile/Mobile.inc.php line35:8]Use of undefined constant CARRIER_Y - assumed 'CARRIER_Y'
+[04/28 00:27:54] :[/usr/local/apache2/htdocs/tmp/copernicus/project/lib/mobile/Mobile.inc.php line36:8]Use of undefined constant CARRIER_E - assumed 'CARRIER_E'
+[04/28 00:27:54] :[/usr/local/apache2/htdocs/tmp/copernicus/project/lib/mobile/Mobile.inc.php line59:8]Undefined variable: uid
+[04/28 00:27:54] :uid=[]
+[04/28 00:27:54] :[/usr/local/apache2/htdocs/tmp/copernicus/project/lib/mobile/Mobile.inc.php line60:8]Undefined variable: uid
+[04/28 00:27:54] :templates_dir=[/usr/local/apache2/htdocs/tmp/copernicus/project/templates/html/] file=[./tmp/copernicus/project/htdocs/test.tpl]
+[04/28 00:27:54] :[/usr/local/apache2/htdocs/tmp/copernicus/project/inc/common.inc.php line29:8]Undefined index:  short_useragent
+[04/28 00:27:54] :[/usr/local/apache2/htdocs/tmp/copernicus/project/inc/common.inc.php line30:8]Undefined index:  short_useragent
+[04/28 00:27:54] :[/usr/local/apache2/htdocs/tmp/copernicus/project/inc/common.inc.php line30:8]Undefined index:  short_useragent
+[04/28 00:27:54] :[/usr/local/apache2/htdocs/tmp/copernicus/project/inc/start.inc.php line30:8]Undefined index:  short_useragent
+[04/28 00:27:54] :HITAIOU: carrier=[i] ua=[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_3) AppleWebKit/537.31 (KHTML, like Gecko) Chrome/26.0.1410.65 Safari/537.31] short[]
+[04/28 00:27:54] :[/usr/local/apache2/htdocs/tmp/copernicus/project/smarty/Smarty.class.php line1095:512]Smarty error: unable to read resource: "hitaiou.tpl"
+[04/28 00:27:54] :[/usr/local/apache2/htdocs/tmp/copernicus/project/inc/core.inc.php line234:8]Trying to get property of non-object
+[04/28 00:29:44] :start /tmp/copernicus/project/htdocs/test.php
+[04/28 00:29:44] req:Array
+(
+)
+
+[04/28 00:29:44] :127.0.0.1, 3306, myapps_development, root, 
+[04/28 00:29:44] :sql:set character set utf8
+[04/28 00:29:44] :sql:set names utf8
+[04/28 00:29:44] :[/usr/local/apache2/htdocs/tmp/copernicus/project/lib/mobile/Mobile.inc.php line34:8]Use of undefined constant CARRIER_I - assumed 'CARRIER_I'
+[04/28 00:29:44] :[/usr/local/apache2/htdocs/tmp/copernicus/project/lib/mobile/Mobile.inc.php line35:8]Use of undefined constant CARRIER_Y - assumed 'CARRIER_Y'
+[04/28 00:29:44] :[/usr/local/apache2/htdocs/tmp/copernicus/project/lib/mobile/Mobile.inc.php line36:8]Use of undefined constant CARRIER_E - assumed 'CARRIER_E'
+[04/28 00:29:44] :[/usr/local/apache2/htdocs/tmp/copernicus/project/lib/mobile/Mobile.inc.php line59:8]Undefined variable: uid
+[04/28 00:29:44] :uid=[]
+[04/28 00:29:44] :[/usr/local/apache2/htdocs/tmp/copernicus/project/lib/mobile/Mobile.inc.php line60:8]Undefined variable: uid
+[04/28 00:29:44] :templates_dir=[/usr/local/apache2/htdocs/tmp/copernicus/project/templates/html/] file=[./tmp/copernicus/project/htdocs/test.tpl]
+[04/28 00:29:44] :[/usr/local/apache2/htdocs/tmp/copernicus/project/inc/common.inc.php line29:8]Undefined index:  short_useragent
+[04/28 00:29:44] :[/usr/local/apache2/htdocs/tmp/copernicus/project/inc/common.inc.php line30:8]Undefined index:  short_useragent
+[04/28 00:29:44] :[/usr/local/apache2/htdocs/tmp/copernicus/project/inc/common.inc.php line30:8]Undefined index:  short_useragent
+[04/28 00:29:44] :[/usr/local/apache2/htdocs/tmp/copernicus/project/inc/start.inc.php line30:8]Undefined index:  short_useragent
+[04/28 00:29:44] :HITAIOU: carrier=[i] ua=[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_3) AppleWebKit/537.31 (KHTML, like Gecko) Chrome/26.0.1410.65 Safari/537.31] short[]
+[04/28 00:29:44] :[/usr/local/apache2/htdocs/tmp/copernicus/project/smarty/Smarty.class.php line1095:512]Smarty error: unable to read resource: "hitaiou.tpl"
+[04/28 00:29:44] :[/usr/local/apache2/htdocs/tmp/copernicus/project/inc/core.inc.php line234:8]Trying to get property of non-object
+[04/28 00:31:25] :start /tmp/copernicus/project/htdocs/test.php
+[04/28 00:31:25] req:Array
+(
+)
+
+[04/28 00:31:25] :127.0.0.1, 3306, myapps_development, root, 
+[04/28 00:31:25] :sql:set character set utf8
+[04/28 00:31:25] :sql:set names utf8
+[04/28 00:31:25] :[/usr/local/apache2/htdocs/tmp/copernicus/project/lib/mobile/Mobile.inc.php line34:8]Use of undefined constant CARRIER_I - assumed 'CARRIER_I'
+[04/28 00:31:25] :[/usr/local/apache2/htdocs/tmp/copernicus/project/lib/mobile/Mobile.inc.php line35:8]Use of undefined constant CARRIER_Y - assumed 'CARRIER_Y'
+[04/28 00:31:25] :[/usr/local/apache2/htdocs/tmp/copernicus/project/lib/mobile/Mobile.inc.php line36:8]Use of undefined constant CARRIER_E - assumed 'CARRIER_E'
+[04/28 00:31:25] :[/usr/local/apache2/htdocs/tmp/copernicus/project/lib/mobile/Mobile.inc.php line59:8]Undefined variable: uid
+[04/28 00:31:25] :uid=[]
+[04/28 00:31:25] :[/usr/local/apache2/htdocs/tmp/copernicus/project/lib/mobile/Mobile.inc.php line60:8]Undefined variable: uid
+[04/28 00:31:25] :templates_dir=[/usr/local/apache2/htdocs/tmp/copernicus/project/templates/html/] file=[./tmp/copernicus/project/htdocs/test.tpl]
+[04/28 00:31:25] :start end
+[04/28 00:31:25] :[/usr/local/apache2/htdocs/tmp/copernicus/project/htdocs/test.php line4:8]Undefined index:  v
+[04/28 00:31:25] :[/usr/local/apache2/htdocs/tmp/copernicus/project/smarty/Smarty.class.php line1095:512]Smarty error: unable to read resource: "./header.inc.tpl"
+[04/28 00:31:25] tpl:/usr/local/apache2/htdocs/tmp/copernicus/project/templates/html/./tmp/copernicus/project/htdocs/test.tpl
+[04/28 00:31:25] :[/usr/local/apache2/htdocs/tmp/copernicus/project/smarty/Smarty.class.php line1095:512]Smarty error: unable to read resource: "./tmp/copernicus/project/htdocs/test.tpl"
+[04/28 00:31:25] :[/usr/local/apache2/htdocs/tmp/copernicus/project/smarty/Smarty.class.php line1095:512]Smarty error: unable to read resource: "./footer.inc.tpl"
+[04/28 00:31:25] :take time is 0.01555 sec
+[04/28 00:32:03] :start /tmp/copernicus/project/htdocs/test.php
+[04/28 00:32:03] req:Array
+(
+)
+
+[04/28 00:32:03] :127.0.0.1, 3306, myapps_development, root, 
+[04/28 00:32:03] :sql:set character set utf8
+[04/28 00:32:03] :sql:set names utf8
+[04/28 00:32:03] :[/usr/local/apache2/htdocs/tmp/copernicus/project/lib/mobile/Mobile.inc.php line34:8]Use of undefined constant CARRIER_I - assumed 'CARRIER_I'
+[04/28 00:32:03] :[/usr/local/apache2/htdocs/tmp/copernicus/project/lib/mobile/Mobile.inc.php line35:8]Use of undefined constant CARRIER_Y - assumed 'CARRIER_Y'
+[04/28 00:32:03] :[/usr/local/apache2/htdocs/tmp/copernicus/project/lib/mobile/Mobile.inc.php line36:8]Use of undefined constant CARRIER_E - assumed 'CARRIER_E'
+[04/28 00:32:03] :[/usr/local/apache2/htdocs/tmp/copernicus/project/lib/mobile/Mobile.inc.php line59:8]Undefined variable: uid
+[04/28 00:32:03] :uid=[]
+[04/28 00:32:03] :[/usr/local/apache2/htdocs/tmp/copernicus/project/lib/mobile/Mobile.inc.php line60:8]Undefined variable: uid
+[04/28 00:32:03] :templates_dir=[/usr/local/apache2/htdocs/tmp/copernicus/project/templates/html/] file=[./tmp/copernicus/project/htdocs/test.tpl]
+[04/28 00:32:03] :start end
+[04/28 00:32:03] :[/usr/local/apache2/htdocs/tmp/copernicus/project/htdocs/test.php line4:8]Undefined index:  v
+[04/28 00:32:03] :[/usr/local/apache2/htdocs/tmp/copernicus/project/smarty/Smarty.class.php line1095:512]Smarty error: unable to read resource: "./header.inc.tpl"
+[04/28 00:32:03] tpl:/usr/local/apache2/htdocs/tmp/copernicus/project/templates/html/./tmp/copernicus/project/htdocs/test.tpl
+[04/28 00:32:03] :[/usr/local/apache2/htdocs/tmp/copernicus/project/smarty/Smarty.class.php line1095:512]Smarty error: unable to read resource: "./tmp/copernicus/project/htdocs/test.tpl"
+[04/28 00:32:03] :[/usr/local/apache2/htdocs/tmp/copernicus/project/smarty/Smarty.class.php line1095:512]Smarty error: unable to read resource: "./footer.inc.tpl"
+[04/28 00:32:03] :take time is 0.01559 sec
+[04/28 00:34:48] :start /tmp/copernicus/project/htdocs/test.php
+[04/28 00:34:48] req:Array
+(
+)
+
+[04/28 00:34:48] :127.0.0.1, 3306, myapps_development, root, 
+[04/28 00:34:48] :sql:set character set utf8
+[04/28 00:34:48] :sql:set names utf8
+[04/28 00:34:48] :[/usr/local/apache2/htdocs/tmp/copernicus/project/lib/mobile/Mobile.inc.php line34:8]Use of undefined constant CARRIER_I - assumed 'CARRIER_I'
+[04/28 00:34:48] :[/usr/local/apache2/htdocs/tmp/copernicus/project/lib/mobile/Mobile.inc.php line35:8]Use of undefined constant CARRIER_Y - assumed 'CARRIER_Y'
+[04/28 00:34:48] :[/usr/local/apache2/htdocs/tmp/copernicus/project/lib/mobile/Mobile.inc.php line36:8]Use of undefined constant CARRIER_E - assumed 'CARRIER_E'
+[04/28 00:34:48] :[/usr/local/apache2/htdocs/tmp/copernicus/project/lib/mobile/Mobile.inc.php line59:8]Undefined variable: uid
+[04/28 00:34:48] :uid=[]
+[04/28 00:34:48] :[/usr/local/apache2/htdocs/tmp/copernicus/project/lib/mobile/Mobile.inc.php line60:8]Undefined variable: uid
+[04/28 00:34:48] :templates_dir=[/usr/local/apache2/htdocs/tmp/copernicus/project/templates/html/] file=[./tmp/copernicus/project/htdocs/test.tpl]
+[04/28 00:34:48] :start end
+[04/28 00:34:48] :[/usr/local/apache2/htdocs/tmp/copernicus/project/htdocs/test.php line4:8]Undefined index:  v
+[04/28 00:34:48] :[/usr/local/apache2/htdocs/tmp/copernicus/project/smarty/Smarty.class.php line1095:512]Smarty error: unable to read resource: "./header.inc.tpl"
+[04/28 00:34:48] tpl:/usr/local/apache2/htdocs/tmp/copernicus/project/templates/html/./tmp/copernicus/project/htdocs/test.tpl
+[04/28 00:34:48] :[/usr/local/apache2/htdocs/tmp/copernicus/project/smarty/Smarty.class.php line1095:512]Smarty error: unable to read resource: "./tmp/copernicus/project/htdocs/test.tpl"
+[04/28 00:34:48] :[/usr/local/apache2/htdocs/tmp/copernicus/project/smarty/Smarty.class.php line1095:512]Smarty error: unable to read resource: "./footer.inc.tpl"
+[04/28 00:34:48] :take time is 0.01557 sec
+[04/28 00:51:31] :start /tmp/copernicus/project/htdocs/test.php
+[04/28 00:51:31] req:Array
+(
+)
+
+[04/28 00:51:31] :127.0.0.1, 3306, myapps_development, root, 
+[04/28 00:51:31] :sql:set character set utf8
+[04/28 00:51:31] :sql:set names utf8
+[04/28 00:51:31] :[/usr/local/apache2/htdocs/tmp/copernicus/project/lib/mobile/Mobile.inc.php line34:8]Use of undefined constant CARRIER_I - assumed 'CARRIER_I'
+[04/28 00:51:31] :[/usr/local/apache2/htdocs/tmp/copernicus/project/lib/mobile/Mobile.inc.php line35:8]Use of undefined constant CARRIER_Y - assumed 'CARRIER_Y'
+[04/28 00:51:31] :[/usr/local/apache2/htdocs/tmp/copernicus/project/lib/mobile/Mobile.inc.php line36:8]Use of undefined constant CARRIER_E - assumed 'CARRIER_E'
+[04/28 00:51:31] :[/usr/local/apache2/htdocs/tmp/copernicus/project/lib/mobile/Mobile.inc.php line59:8]Undefined variable: uid
+[04/28 00:51:31] :uid=[]
+[04/28 00:51:31] :[/usr/local/apache2/htdocs/tmp/copernicus/project/lib/mobile/Mobile.inc.php line60:8]Undefined variable: uid
+[04/28 00:51:31] :templates_dir=[/usr/local/apache2/htdocs/tmp/copernicus/project/templates/html/] file=[./tmp/copernicus/project/htdocs/test.tpl]
+[04/28 00:51:31] :start end
+[04/28 00:51:31] :[/usr/local/apache2/htdocs/tmp/copernicus/project/htdocs/test.php line4:8]Undefined index:  v
+[04/28 00:51:31] :[/usr/local/apache2/htdocs/tmp/copernicus/project/smarty/Smarty.class.php line1095:512]Smarty error: unable to read resource: "./header.inc.tpl"
+[04/28 00:51:31] tpl:/usr/local/apache2/htdocs/tmp/copernicus/project/templates/html/./tmp/copernicus/project/htdocs/test.tpl
+[04/28 00:51:31] :[/usr/local/apache2/htdocs/tmp/copernicus/project/smarty/Smarty.class.php line1095:512]Smarty error: unable to read resource: "./tmp/copernicus/project/htdocs/test.tpl"
+[04/28 00:51:31] :[/usr/local/apache2/htdocs/tmp/copernicus/project/smarty/Smarty.class.php line1095:512]Smarty error: unable to read resource: "./footer.inc.tpl"
+[04/28 00:51:31] :take time is 0.01561 sec
+[04/28 00:51:36] :start /tmp/copernicus/project/htdocs/test.php
+[04/28 00:51:36] req:Array
+(
+)
+
+[04/28 00:51:36] :127.0.0.1, 3306, myapps_development, root, 
+[04/28 00:51:36] :sql:set character set utf8
+[04/28 00:51:36] :sql:set names utf8
+[04/28 00:51:36] :[/usr/local/apache2/htdocs/tmp/copernicus/project/lib/mobile/Mobile.inc.php line34:8]Use of undefined constant CARRIER_I - assumed 'CARRIER_I'
+[04/28 00:51:36] :[/usr/local/apache2/htdocs/tmp/copernicus/project/lib/mobile/Mobile.inc.php line35:8]Use of undefined constant CARRIER_Y - assumed 'CARRIER_Y'
+[04/28 00:51:36] :[/usr/local/apache2/htdocs/tmp/copernicus/project/lib/mobile/Mobile.inc.php line36:8]Use of undefined constant CARRIER_E - assumed 'CARRIER_E'
+[04/28 00:51:36] :[/usr/local/apache2/htdocs/tmp/copernicus/project/lib/mobile/Mobile.inc.php line59:8]Undefined variable: uid
+[04/28 00:51:36] :uid=[]
+[04/28 00:51:36] :[/usr/local/apache2/htdocs/tmp/copernicus/project/lib/mobile/Mobile.inc.php line60:8]Undefined variable: uid
+[04/28 00:51:36] :templates_dir=[/usr/local/apache2/htdocs/tmp/copernicus/project/templates/html/] file=[./tmp/copernicus/project/htdocs/test.tpl]
+[04/28 00:51:36] :start end
+[04/28 00:51:36] :[/usr/local/apache2/htdocs/tmp/copernicus/project/htdocs/test.php line4:8]Undefined index:  v
+[04/28 00:51:36] :[/usr/local/apache2/htdocs/tmp/copernicus/project/smarty/Smarty.class.php line1095:512]Smarty error: unable to read resource: "./header.inc.tpl"
+[04/28 00:51:36] tpl:/usr/local/apache2/htdocs/tmp/copernicus/project/templates/html/./tmp/copernicus/project/htdocs/test.tpl
+[04/28 00:51:36] :[/usr/local/apache2/htdocs/tmp/copernicus/project/smarty/Smarty.class.php line1095:512]Smarty error: unable to read resource: "./tmp/copernicus/project/htdocs/test.tpl"
+[04/28 00:51:36] :[/usr/local/apache2/htdocs/tmp/copernicus/project/smarty/Smarty.class.php line1095:512]Smarty error: unable to read resource: "./footer.inc.tpl"
+[04/28 00:51:36] :take time is 0.01545 sec
+[04/28 00:52:08] :start /tmp/copernicus/project/htdocs/test.php
+[04/28 00:52:08] req:Array
+(
+)
+
+[04/28 00:52:08] :127.0.0.1, 3306, myapps_development, root, 
+[04/28 00:52:08] :sql:set character set utf8
+[04/28 00:52:08] :sql:set names utf8
+[04/28 00:52:08] :templates_dir=[/usr/local/apache2/htdocs/tmp/copernicus/project/templates/html/] file=[./tmp/copernicus/project/htdocs/test.tpl]
+[04/28 00:52:08] :start end
+[04/28 00:52:08] :[/usr/local/apache2/htdocs/tmp/copernicus/project/htdocs/test.php line4:8]Undefined index:  v
+[04/28 00:52:08] :[/usr/local/apache2/htdocs/tmp/copernicus/project/smarty/Smarty.class.php line1095:512]Smarty error: unable to read resource: "./header.inc.tpl"
+[04/28 00:52:08] tpl:/usr/local/apache2/htdocs/tmp/copernicus/project/templates/html/./tmp/copernicus/project/htdocs/test.tpl
+[04/28 00:52:08] :[/usr/local/apache2/htdocs/tmp/copernicus/project/smarty/Smarty.class.php line1095:512]Smarty error: unable to read resource: "./tmp/copernicus/project/htdocs/test.tpl"
+[04/28 00:52:08] :[/usr/local/apache2/htdocs/tmp/copernicus/project/smarty/Smarty.class.php line1095:512]Smarty error: unable to read resource: "./footer.inc.tpl"
+[04/28 00:52:08] :take time is 0.01522 sec
+[04/28 00:52:25] :start /tmp/copernicus/project/htdocs/test.php
+[04/28 00:52:25] req:Array
+(
+)
+
+[04/28 00:52:25] :127.0.0.1, 3306, myapps_development, root, 
+[04/28 00:52:25] :sql:set character set utf8
+[04/28 00:52:25] :sql:set names utf8
+[04/28 00:52:25] :222
+[04/28 00:52:25] :templates_dir=[/usr/local/apache2/htdocs/tmp/copernicus/project/templates/html/] file=[./tmp/copernicus/project/htdocs/test.tpl]
+[04/28 00:52:25] :start end
+[04/28 00:52:25] :[/usr/local/apache2/htdocs/tmp/copernicus/project/htdocs/test.php line4:8]Undefined index:  v
+[04/28 00:52:25] :[/usr/local/apache2/htdocs/tmp/copernicus/project/smarty/Smarty.class.php line1095:512]Smarty error: unable to read resource: "./header.inc.tpl"
+[04/28 00:52:25] tpl:/usr/local/apache2/htdocs/tmp/copernicus/project/templates/html/./tmp/copernicus/project/htdocs/test.tpl
+[04/28 00:52:25] :[/usr/local/apache2/htdocs/tmp/copernicus/project/smarty/Smarty.class.php line1095:512]Smarty error: unable to read resource: "./tmp/copernicus/project/htdocs/test.tpl"
+[04/28 00:52:25] :[/usr/local/apache2/htdocs/tmp/copernicus/project/smarty/Smarty.class.php line1095:512]Smarty error: unable to read resource: "./footer.inc.tpl"
+[04/28 00:52:25] :take time is 0.01527 sec
+[04/28 00:52:26] :start /tmp/copernicus/project/htdocs/test.php
+[04/28 00:52:26] req:Array
+(
+)
+
+[04/28 00:52:26] :127.0.0.1, 3306, myapps_development, root, 
+[04/28 00:52:26] :sql:set character set utf8
+[04/28 00:52:26] :sql:set names utf8
+[04/28 00:52:26] :222
+[04/28 00:52:26] :templates_dir=[/usr/local/apache2/htdocs/tmp/copernicus/project/templates/html/] file=[./tmp/copernicus/project/htdocs/test.tpl]
+[04/28 00:52:26] :start end
+[04/28 00:52:26] :[/usr/local/apache2/htdocs/tmp/copernicus/project/htdocs/test.php line4:8]Undefined index:  v
+[04/28 00:52:26] :[/usr/local/apache2/htdocs/tmp/copernicus/project/smarty/Smarty.class.php line1095:512]Smarty error: unable to read resource: "./header.inc.tpl"
+[04/28 00:52:26] tpl:/usr/local/apache2/htdocs/tmp/copernicus/project/templates/html/./tmp/copernicus/project/htdocs/test.tpl
+[04/28 00:52:26] :[/usr/local/apache2/htdocs/tmp/copernicus/project/smarty/Smarty.class.php line1095:512]Smarty error: unable to read resource: "./tmp/copernicus/project/htdocs/test.tpl"
+[04/28 00:52:26] :[/usr/local/apache2/htdocs/tmp/copernicus/project/smarty/Smarty.class.php line1095:512]Smarty error: unable to read resource: "./footer.inc.tpl"
+[04/28 00:52:26] :take time is 0.01537 sec
+[04/28 00:52:54] :start /tmp/copernicus/project/htdocs/test.php
+[04/28 00:52:54] req:Array
+(
+)
+
+[04/28 00:52:54] :127.0.0.1, 3306, myapps_development, root, 
+[04/28 00:52:54] :sql:set character set utf8
+[04/28 00:52:54] :sql:set names utf8
+[04/28 00:52:54] :templates_dir=[/usr/local/apache2/htdocs/tmp/copernicus/project/templates/html/] file=[./tmp/copernicus/project/htdocs/test.tpl]
+[04/28 00:52:54] :start end
+[04/28 00:52:54] :[/usr/local/apache2/htdocs/tmp/copernicus/project/htdocs/test.php line4:8]Undefined index:  v
+[04/28 00:52:54] :[/usr/local/apache2/htdocs/tmp/copernicus/project/smarty/Smarty.class.php line1095:512]Smarty error: unable to read resource: "./header.inc.tpl"
+[04/28 00:52:54] tpl:/usr/local/apache2/htdocs/tmp/copernicus/project/templates/html/./tmp/copernicus/project/htdocs/test.tpl
+[04/28 00:52:54] :[/usr/local/apache2/htdocs/tmp/copernicus/project/smarty/Smarty.class.php line1095:512]Smarty error: unable to read resource: "./tmp/copernicus/project/htdocs/test.tpl"
+[04/28 00:52:54] :[/usr/local/apache2/htdocs/tmp/copernicus/project/smarty/Smarty.class.php line1095:512]Smarty error: unable to read resource: "./footer.inc.tpl"
+[04/28 00:52:54] :take time is 0.01528 sec
+[04/28 00:52:56] :start /tmp/copernicus/project/htdocs/test.php
+[04/28 00:52:56] req:Array
+(
+)
+
+[04/28 00:52:56] :127.0.0.1, 3306, myapps_development, root, 
+[04/28 00:52:56] :sql:set character set utf8
+[04/28 00:52:56] :sql:set names utf8
+[04/28 00:52:56] :templates_dir=[/usr/local/apache2/htdocs/tmp/copernicus/project/templates/html/] file=[./tmp/copernicus/project/htdocs/test.tpl]
+[04/28 00:52:56] :start end
+[04/28 00:52:56] :[/usr/local/apache2/htdocs/tmp/copernicus/project/htdocs/test.php line4:8]Undefined index:  v
+[04/28 00:52:56] :[/usr/local/apache2/htdocs/tmp/copernicus/project/smarty/Smarty.class.php line1095:512]Smarty error: unable to read resource: "./header.inc.tpl"
+[04/28 00:52:56] tpl:/usr/local/apache2/htdocs/tmp/copernicus/project/templates/html/./tmp/copernicus/project/htdocs/test.tpl
+[04/28 00:52:56] :[/usr/local/apache2/htdocs/tmp/copernicus/project/smarty/Smarty.class.php line1095:512]Smarty error: unable to read resource: "./tmp/copernicus/project/htdocs/test.tpl"
+[04/28 00:52:56] :[/usr/local/apache2/htdocs/tmp/copernicus/project/smarty/Smarty.class.php line1095:512]Smarty error: unable to read resource: "./footer.inc.tpl"
+[04/28 00:52:56] :take time is 0.01598 sec
+[04/28 00:57:46] :[/usr/local/apache2/htdocs/tmp/copernicus/project/inc/core.inc.php line34:8]Undefined variable: _is_admin
+[04/28 00:57:46] :[/usr/local/apache2/htdocs/tmp/copernicus/project/inc/core.inc.php line218:8]Trying to get property of non-object
+[04/28 00:58:10] :start /tmp/copernicus/project/htdocs/test.php
+[04/28 00:58:10] req:Array
+(
+)
+
+[04/28 00:58:10] :127.0.0.1, 3306, myapps_development, root, 
+[04/28 00:58:10] :sql:set character set utf8
+[04/28 00:58:10] :sql:set names utf8
+[04/28 00:58:10] :templates_dir=[/usr/local/apache2/htdocs/tmp/copernicus/project/templates/html/] file=[./tmp/copernicus/project/htdocs/test.tpl]
+[04/28 00:58:10] :start end
+[04/28 00:58:10] :[/usr/local/apache2/htdocs/tmp/copernicus/project/htdocs/test.php line4:8]Undefined index:  v
+[04/28 00:58:10] :[/usr/local/apache2/htdocs/tmp/copernicus/project/smarty/Smarty.class.php line1095:512]Smarty error: unable to read resource: "./header.inc.tpl"
+[04/28 00:58:10] tpl:/usr/local/apache2/htdocs/tmp/copernicus/project/templates/html/./tmp/copernicus/project/htdocs/test.tpl
+[04/28 00:58:10] :[/usr/local/apache2/htdocs/tmp/copernicus/project/smarty/Smarty.class.php line1095:512]Smarty error: unable to read resource: "./tmp/copernicus/project/htdocs/test.tpl"
+[04/28 00:58:10] :[/usr/local/apache2/htdocs/tmp/copernicus/project/smarty/Smarty.class.php line1095:512]Smarty error: unable to read resource: "./footer.inc.tpl"
+[04/28 00:58:10] :take time is 0.01398 sec
+[04/28 01:00:30] :start /tmp/copernicus/project/htdocs/test.php
+[04/28 01:00:30] req:Array
+(
+)
+
+[04/28 01:00:30] :127.0.0.1, 3306, myapps_development, root, 
+[04/28 01:00:30] :sql:set character set utf8
+[04/28 01:00:30] :sql:set names utf8
+[04/28 01:00:30] :templates_dir=[/usr/local/apache2/htdocs/tmp/copernicus/project/templates/html/] file=[./tmp/copernicus/project/htdocs/test.tpl]
+[04/28 01:00:30] :start end
+[04/28 01:00:30] :[/usr/local/apache2/htdocs/tmp/copernicus/project/htdocs/test.php line4:8]Undefined index:  v
+[04/28 01:00:30] :[/usr/local/apache2/htdocs/tmp/copernicus/project/smarty/Smarty.class.php line1095:512]Smarty error: unable to read resource: "./header.inc.tpl"
+[04/28 01:00:30] tpl:/usr/local/apache2/htdocs/tmp/copernicus/project/templates/html/./tmp/copernicus/project/htdocs/test.tpl
+[04/28 01:00:30] :[/usr/local/apache2/htdocs/tmp/copernicus/project/smarty/Smarty.class.php line1095:512]Smarty error: unable to read resource: "./tmp/copernicus/project/htdocs/test.tpl"
+[04/28 01:00:30] :[/usr/local/apache2/htdocs/tmp/copernicus/project/smarty/Smarty.class.php line1095:512]Smarty error: unable to read resource: "./footer.inc.tpl"
+[04/28 01:00:30] :take time is 0.01400 sec
+[04/28 01:00:49] :start /tmp/copernicus/project/htdocs/test.php
+[04/28 01:00:49] req:Array
+(
+)
+
+[04/28 01:00:49] :127.0.0.1, 3306, myapps_development, root, 
+[04/28 01:00:49] :sql:set character set utf8
+[04/28 01:00:49] :sql:set names utf8
+[04/28 01:00:49] :templates_dir=[/usr/local/apache2/htdocs/tmp/copernicus/project/templates/html/] file=[./tmp/copernicus/project/htdocs/test.tpl]
+[04/28 01:00:49] :start end
+[04/28 01:00:49] :[/usr/local/apache2/htdocs/tmp/copernicus/project/htdocs/test.php line4:8]Undefined index:  v
+[04/28 01:00:49] :[/usr/local/apache2/htdocs/tmp/copernicus/project/smarty/Smarty.class.php line1095:512]Smarty error: unable to read resource: "./header.inc.tpl"
+[04/28 01:00:49] tpl:/usr/local/apache2/htdocs/tmp/copernicus/project/templates/html/./tmp/copernicus/project/htdocs/test.tpl
+[04/28 01:00:49] :[/usr/local/apache2/htdocs/tmp/copernicus/project/smarty/Smarty.class.php line1095:512]Smarty error: unable to read resource: "./tmp/copernicus/project/htdocs/test.tpl"
+[04/28 01:00:49] :[/usr/local/apache2/htdocs/tmp/copernicus/project/smarty/Smarty.class.php line1095:512]Smarty error: unable to read resource: "./footer.inc.tpl"
+[04/28 01:00:49] :take time is 0.01396 sec

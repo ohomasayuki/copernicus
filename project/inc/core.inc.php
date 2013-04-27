@@ -9,22 +9,11 @@ $g->PATH['root'] = dirname(dirname(__FILE__));
 $g->PATH['libs'] = $g->PATH['root'].'/lib';
 $g->PATH['inc'] = $g->PATH['root'].'/inc';
 require_once $g->PATH['libs'] . '/settings.inc.php';
-require_once $g->PATH['libs'] . '/mobile/emoji_sjis.inc.php';
+//require_once $g->PATH['libs'] . '/mobile/emoji_sjis.inc.php';
 require_once $g->PATH['libs'] . '/Debug.class.php';
 $debugger = getDebugger();
 $debugger->is_display_off = 1;
-if( strpos($_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'], 'admin') !== false ){
-  // ADMIN
-  $g->g['OUTPUT_ENCODING'] = 'UTF-8';
-  $_is_admin = true;
-}else{
-  $g->g['OUTPUT_ENCODING'] = 'Shift_JIS';
-  $_is_admin = false;
-  if( $_SERVER['REMOTE_ADDR'] == '125.200.77.99' ){
-    // 社内開発時のみデバッグ出力
-    $debugger->is_display_off = 0; 
-  }
-}
+$g->g['OUTPUT_ENCODING'] = 'UTF-8';
 assert_options(ASSERT_CALLBACK, 'my_assert_handler');
 set_error_handler("my_error_handler");
 require_once $g->PATH['libs'] . '/Lib.inc.php';
@@ -35,15 +24,14 @@ require_once $g->PATH['libs'] . '/smarty.inc.php';
 require_once $g->PATH['root'] . '/smarty/Smarty.class.php';
 require_once $g->PATH['inc']  . '/define.inc.php'; // アプリ定義
 require_once $g->PATH['inc']  . '/common.inc.php'; // アプリ共通
-require_once $g->PATH['libs'] . '/mobile/Mobile.inc.php';
-require_once $g->PATH['libs'] . '/mobile/mobile.conf.php';
-require_once $g->PATH['libs'] . '/mobile/mobile_swf.conf.php';
-require_once $g->PATH['libs'] . '/mobile/mobile_swf.conf.php';
+//require_once $g->PATH['libs'] . '/mobile/Mobile.inc.php';
+//require_once $g->PATH['libs'] . '/mobile/mobile.conf.php';
+//require_once $g->PATH['libs'] . '/mobile/mobile_swf.conf.php';
 require_once $g->PATH['libs'] . '/check.inc.php';
 require_once $g->PATH['libs'] . '/Pager.class.php';
 require_once $g->PATH['libs'] . '/MailTag.class.php';
 $req = array_merge($_GET,$_POST);
-if(!$_is_admin){$req = requestConvertEmoji($req);}
+//if(!$_is_admin){$req = requestConvertEmoji($req);}
 debug('start '.$_SERVER['REQUEST_URI']);
 debug($req,'req');
 //mbconvert($req);
@@ -76,10 +64,6 @@ function urlWlap($url){
   global $g;
   //debug(__FUNCTION__.$url);
   $add['back'] = urlencode(createBackUrl());
-  if( isDocomo() ){
-    $add['uid'] = 'NULLGWDOCOMO';
-    $add['guid'] = 'on';
-  }
   $add['rnd'] = rand(1000,9999); // キャッシュを読まないように乱数をセット
   if( strpos($url, 'http') !== 0 ){
     return addParam( $url, $add ); // 内部サイト(絶対URL)

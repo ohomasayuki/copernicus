@@ -1,14 +1,5 @@
-AddType application/x-decomail-template .dmt
-AddType application/x-htmlmail-template .hmt
-AddType application/x-kddi-htmlmail .khm
-
-AddType video/3gpp2 3g2
-AddType application/vnd.oma.drm.content dcf
 #php_value output_handler mb_output_handler
-#php_value default_charset Shift_JIS
 php_value mbstring.http_input auto
-#php_value mbstring.http_output SJIS
-#php_value mbstring.encoding_translation 1
 php_value mbstring.encoding_translation 0
 php_value mbstring.language Japanese
 php_value mbstring.substitute_character 0
@@ -19,62 +10,4 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^.*php$ static.php [L]
 
 order deny,allow
-deny from all
-allow from 210.153.84.0/24
-allow from 210.136.161.0/24
-allow from 210.153.86.0/24
-allow from 210.169.40.0/24
-allow from 210.196.3.192/26
-allow from 210.196.5.192/26
-allow from 210.230.128.0/24
-allow from 210.230.141.192/26
-allow from 210.234.105.32/29
-allow from 210.234.108.64/26
-allow from 210.251.1.192/26
-allow from 210.251.2.0/27
-allow from 211.5.1.0/24
-allow from 211.5.2.128/25
-allow from 211.5.7.0/24
-allow from 218.222.1.0/24
-allow from 61.117.0.0/24
-allow from 61.117.1.0/24
-allow from 61.117.2.0/26
-allow from 61.202.3.0/24
-allow from 219.108.158.0/26
-allow from 219.125.148.0/24
-allow from 222.5.63.0/24
-allow from 222.7.56.0/24
-allow from 222.5.62.128/25
-allow from 222.7.57.0/24
-allow from 59.135.38.128/25
-allow from 219.108.157.0/25
-allow from 219.125.151.128/25
-allow from 219.125.145.0/25
-allow from 121.111.231.0/25
-allow from 121.111.231.160/27
-allow from 121.111.227.0/25
-allow from 123.108.236.0/24 
-allow from 123.108.237.0/27 
-allow from 202.179.204.0/24 
-allow from 202.253.96.224/27 
-allow from 210.146.7.192/26 
-allow from 210.146.60.192/26 
-allow from 210.151.9.128/26 
-allow from 210.169.130.112/28 
-allow from 210.175.1.128/25 
-allow from 210.228.189.0/24 
-allow from 211.8.159.128/25 
-####our
-#synapse
-allow from 125.200.77.99
-allow from 210.188.216.54
-allow from 150.70.84.26
-#flex firm
-allow from 220.99.93.51
-allow from 125.206.199.56
-#local
-allow from 127.0.0.1
-#hms
-allow from 124.32.254.235 
-allow from 59.106.67.138
 
