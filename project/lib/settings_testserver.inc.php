@@ -31,7 +31,7 @@ define('DB_PORT2', '3306');
 define('ROOT_PATH', dirname(dirname(__FILE__)) . '/' ); // DocumentRootの1つ上(例:/usr/local/apache2/)
 define('ROOT_URL', 'http://' . $_SERVER['SERVER_NAME'] . '/');
 define('SSL_ROOT_URL', 'https://' . $_SERVER['SERVER_NAME'] . '/'); // 使用しない
-define('ROOT_URI', 'tmp/copernicus/project/test/htdocs/');
+define('ROOT_URI', '');
 define('HTDOCS_PATH', ROOT_PATH . 'htdocs/');
 define('UP_BASE_URL', ROOT_URL . 'up/');
 define('UP_BASE_PATH', HTDOCS_PATH . 'up/');

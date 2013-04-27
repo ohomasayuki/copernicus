@@ -76,7 +76,7 @@ class Debugger {
 	  echo '<div style="font-size:small;color:green">[debug:'.$name.']'.$m."</div>\n";
 	}
       }else{
-	echo '[debug:'.$name.']'.$m."\n";
+	    echo '[debug:'.$name.']'.$m."\n";
       }
     }
   }

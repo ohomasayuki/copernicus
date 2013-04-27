@@ -307,3 +307,126 @@
 [04/28 01:00:49] :[/usr/local/apache2/htdocs/tmp/copernicus/project/smarty/Smarty.class.php line1095:512]Smarty error: unable to read resource: "./tmp/copernicus/project/htdocs/test.tpl"
 [04/28 01:00:49] :[/usr/local/apache2/htdocs/tmp/copernicus/project/smarty/Smarty.class.php line1095:512]Smarty error: unable to read resource: "./footer.inc.tpl"
 [04/28 01:00:49] :take time is 0.01396 sec
+[04/28 01:03:05] :start /tmp/copernicus/project/htdocs/test.php
+[04/28 01:03:05] req:Array
+(
+)
+
+[04/28 01:03:05] :127.0.0.1, 3306, myapps_development, root, 
+[04/28 01:03:05] :sql:set character set utf8
+[04/28 01:03:05] :sql:set names utf8
+[04/28 01:03:05] :templates_dir=[/usr/local/apache2/htdocs/tmp/copernicus/project/templates/html/] file=[./tmp/copernicus/project/htdocs/test.tpl]
+[04/28 01:03:05] :start end
+[04/28 01:03:05] :[/usr/local/apache2/htdocs/tmp/copernicus/project/htdocs/test.php line4:8]Undefined index:  v
+[04/28 01:03:05] :[/usr/local/apache2/htdocs/tmp/copernicus/project/smarty/Smarty.class.php line1095:512]Smarty error: unable to read resource: "./header.inc.tpl"
+[04/28 01:03:05] tpl:/usr/local/apache2/htdocs/tmp/copernicus/project/templates/html/./tmp/copernicus/project/htdocs/test.tpl
+[04/28 01:03:05] :[/usr/local/apache2/htdocs/tmp/copernicus/project/smarty/Smarty.class.php line1095:512]Smarty error: unable to read resource: "./tmp/copernicus/project/htdocs/test.tpl"
+[04/28 01:03:05] :[/usr/local/apache2/htdocs/tmp/copernicus/project/smarty/Smarty.class.php line1095:512]Smarty error: unable to read resource: "./footer.inc.tpl"
+[04/28 01:03:05] :take time is 0.01392 sec
+[04/28 01:03:22] :start /tmp/copernicus/project/htdocs/test.php
+[04/28 01:03:22] req:Array
+(
+)
+
+[04/28 01:03:22] :127.0.0.1, 3306, myapps_development, root, 
+[04/28 01:03:22] :sql:set character set utf8
+[04/28 01:03:22] :sql:set names utf8
+[04/28 01:03:22] :templates_dir=[/usr/local/apache2/htdocs/tmp/copernicus/project/templates/html/] file=[./tmp/copernicus/project/htdocs/test.tpl]
+[04/28 01:03:22] :start end
+[04/28 01:03:22] :[/usr/local/apache2/htdocs/tmp/copernicus/project/htdocs/test.php line4:8]Undefined index:  v
+[04/28 01:03:22] :[/usr/local/apache2/htdocs/tmp/copernicus/project/smarty/Smarty.class.php line1095:512]Smarty error: unable to read resource: "./header.inc.tpl"
+[04/28 01:03:22] tpl:/usr/local/apache2/htdocs/tmp/copernicus/project/templates/html/./tmp/copernicus/project/htdocs/test.tpl
+[04/28 01:03:22] :[/usr/local/apache2/htdocs/tmp/copernicus/project/smarty/Smarty.class.php line1095:512]Smarty error: unable to read resource: "./tmp/copernicus/project/htdocs/test.tpl"
+[04/28 01:03:22] :[/usr/local/apache2/htdocs/tmp/copernicus/project/smarty/Smarty.class.php line1095:512]Smarty error: unable to read resource: "./footer.inc.tpl"
+[04/28 01:03:22] :take time is 0.01413 sec
+[04/28 01:05:42] :start /tmp/copernicus/project/htdocs/test.php
+[04/28 01:05:42] req:Array
+(
+)
+
+[04/28 01:05:42] :127.0.0.1, 3306, myapps_development, root, 
+[04/28 01:05:42] :sql:set character set utf8
+[04/28 01:05:42] :sql:set names utf8
+[04/28 01:05:53] :start /tmp/copernicus/project/htdocs/test.php
+[04/28 01:05:53] req:Array
+(
+)
+
+[04/28 01:05:53] :127.0.0.1, 3306, myapps_development, root, 
+[04/28 01:05:53] :sql:set character set utf8
+[04/28 01:05:53] :sql:set names utf8
+[04/28 01:05:53] :templates_dir=[/usr/local/apache2/htdocs/tmp/copernicus/project/templates/html/] file=[./tmp/copernicus/project/htdocs/test.tpl]
+[04/28 01:05:53] :start end
+[04/28 01:05:53] :[/usr/local/apache2/htdocs/tmp/copernicus/project/htdocs/test.php line4:8]Undefined index:  v
+[04/28 01:05:53] :[/usr/local/apache2/htdocs/tmp/copernicus/project/smarty/Smarty.class.php line1095:512]Smarty error: unable to read resource: "./header.inc.tpl"
+[04/28 01:05:53] tpl:/usr/local/apache2/htdocs/tmp/copernicus/project/templates/html/./tmp/copernicus/project/htdocs/test.tpl
+[04/28 01:05:53] :[/usr/local/apache2/htdocs/tmp/copernicus/project/smarty/Smarty.class.php line1095:512]Smarty error: unable to read resource: "./tmp/copernicus/project/htdocs/test.tpl"
+[04/28 01:05:53] :[/usr/local/apache2/htdocs/tmp/copernicus/project/smarty/Smarty.class.php line1095:512]Smarty error: unable to read resource: "./footer.inc.tpl"
+[04/28 01:05:53] :take time is 0.01393 sec
+[04/28 01:05:58] :start /tmp/copernicus/project/htdocs/test.php
+[04/28 01:05:58] req:Array
+(
+)
+
+[04/28 01:05:58] :127.0.0.1, 3306, myapps_development, root, 
+[04/28 01:05:58] :sql:set character set utf8
+[04/28 01:05:58] :sql:set names utf8
+[04/28 01:05:58] :templates_dir=[/usr/local/apache2/htdocs/tmp/copernicus/project/templates/html/] file=[./tmp/copernicus/project/htdocs/test.tpl]
+[04/28 01:05:58] :start end
+[04/28 01:05:58] :[/usr/local/apache2/htdocs/tmp/copernicus/project/htdocs/test.php line4:8]Undefined index:  v
+[04/28 01:05:58] :[/usr/local/apache2/htdocs/tmp/copernicus/project/smarty/Smarty.class.php line1095:512]Smarty error: unable to read resource: "./header.inc.tpl"
+[04/28 01:05:58] tpl:/usr/local/apache2/htdocs/tmp/copernicus/project/templates/html/./tmp/copernicus/project/htdocs/test.tpl
+[04/28 01:05:58] :[/usr/local/apache2/htdocs/tmp/copernicus/project/smarty/Smarty.class.php line1095:512]Smarty error: unable to read resource: "./tmp/copernicus/project/htdocs/test.tpl"
+[04/28 01:05:58] :[/usr/local/apache2/htdocs/tmp/copernicus/project/smarty/Smarty.class.php line1095:512]Smarty error: unable to read resource: "./footer.inc.tpl"
+[04/28 01:05:58] :take time is 0.01407 sec
+[04/28 01:23:42] :start /test.php
+[04/28 01:23:42] req:Array
+(
+)
+
+[04/28 01:23:42] :127.0.0.1, 3306, myapps_development, root, 
+[04/28 01:23:42] :sql:set character set utf8
+[04/28 01:23:42] :sql:set names utf8
+[04/28 01:23:42] :templates_dir=[/usr/local/apache2/copernicus/project/templates/html/] file=[./test.tpl]
+[04/28 01:23:42] :start end
+[04/28 01:23:42] :[/usr/local/apache2/copernicus/project/htdocs/test.php line4:8]Undefined index:  v
+[04/28 01:23:42] :[/usr/local/apache2/copernicus/project/smarty/Smarty.class.php line1095:512]Smarty error: unable to read resource: "./header.inc.tpl"
+[04/28 01:23:42] tpl:/usr/local/apache2/copernicus/project/templates/html/./test.tpl
+[04/28 01:23:42] :[/usr/local/apache2/copernicus/project/smarty/Smarty.class.php line1095:256]Smarty error: the $compile_dir '/usr/local/apache2/copernicus/project/templates_c/' does not exist, or is not a directory.
+[04/28 01:23:42] :[/usr/local/apache2/copernicus/project/smarty/Smarty.class.php line1265:2]include(/usr/local/apache2/copernicus/project/templates_c//%%E7^E70^E7089F2B%%test.tpl.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory
+[04/28 01:23:42] :[/usr/local/apache2/copernicus/project/smarty/Smarty.class.php line1265:2]include() [<a href='function.include'>function.include</a>]: Failed opening '/usr/local/apache2/copernicus/project/templates_c//%%E7^E70^E7089F2B%%test.tpl.php' for inclusion (include_path='.:/php/includes;/usr/local/include/php/ext/pdo/:/usr/local/lib/php')
+[04/28 01:23:42] :[/usr/local/apache2/copernicus/project/smarty/Smarty.class.php line1095:512]Smarty error: unable to read resource: "./footer.inc.tpl"
+[04/28 01:23:42] :take time is 0.03811 sec
+[04/28 01:27:48] :start /test.php
+[04/28 01:27:48] req:Array
+(
+)
+
+[04/28 01:27:48] :127.0.0.1, 3306, myapps_development, root, 
+[04/28 01:27:48] :sql:set character set utf8
+[04/28 01:27:48] :sql:set names utf8
+[04/28 01:27:48] :templates_dir=[/usr/local/apache2/copernicus/project/templates/html/] file=[./test.tpl]
+[04/28 01:27:48] :start end
+[04/28 01:27:48] :[/usr/local/apache2/copernicus/project/htdocs/test.php line4:8]Undefined index:  v
+[04/28 01:27:48] :[/usr/local/apache2/copernicus/project/smarty/Smarty.class.php line1095:512]Smarty error: unable to read resource: "./header.inc.tpl"
+[04/28 01:27:48] tpl:/usr/local/apache2/copernicus/project/templates/html/./test.tpl
+[04/28 01:27:48] :[/usr/local/apache2/copernicus/project/smarty/Smarty.class.php line1095:256]Smarty error: the $compile_dir '/usr/local/apache2/copernicus/project/templates_c/' does not exist, or is not a directory.
+[04/28 01:27:48] :[/usr/local/apache2/copernicus/project/smarty/Smarty.class.php line1265:2]include(/usr/local/apache2/copernicus/project/templates_c//%%E7^E70^E7089F2B%%test.tpl.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory
+[04/28 01:27:48] :[/usr/local/apache2/copernicus/project/smarty/Smarty.class.php line1265:2]include() [<a href='function.include'>function.include</a>]: Failed opening '/usr/local/apache2/copernicus/project/templates_c//%%E7^E70^E7089F2B%%test.tpl.php' for inclusion (include_path='.:/php/includes;/usr/local/include/php/ext/pdo/:/usr/local/lib/php')
+[04/28 01:27:48] :[/usr/local/apache2/copernicus/project/smarty/Smarty.class.php line1095:512]Smarty error: unable to read resource: "./footer.inc.tpl"
+[04/28 01:27:48] :take time is 0.03774 sec
+[04/28 01:30:09] :start /test.php
+[04/28 01:30:09] req:Array
+(
+)
+
+[04/28 01:30:09] :127.0.0.1, 3306, myapps_development, root, 
+[04/28 01:30:09] :sql:set character set utf8
+[04/28 01:30:09] :sql:set names utf8
+[04/28 01:30:09] :templates_dir=[/usr/local/apache2/copernicus/project/templates/html/] file=[./test.tpl]
+[04/28 01:30:09] :start end
+[04/28 01:30:09] :[/usr/local/apache2/copernicus/project/htdocs/test.php line4:8]Undefined index:  v
+[04/28 01:30:09] :[/usr/local/apache2/copernicus/project/smarty/Smarty.class.php line1095:512]Smarty error: unable to read resource: "./header.inc.tpl"
+[04/28 01:30:09] tpl:/usr/local/apache2/copernicus/project/templates/html/./test.tpl
+[04/28 01:30:09] :[/usr/local/apache2/copernicus/project/smarty/Smarty.class.php line1095:512]Smarty error: unable to read resource: "./footer.inc.tpl"
+[04/28 01:30:09] :take time is 0.03866 sec

@@ -15,6 +15,7 @@ $g->g['useragent'] = $_SERVER['HTTP_USER_AGENT'];
 $g->g['carrier'] = getCarrier($g->g['useragent']);
 // コンテントヘッダ出力
 //debug_setComment(1);
+debug_setDisplay(1);
 // ここまで機種判定
 header('Content-type: text/html; charset='.$g->g['OUTPUT_ENCODING']);
 //$g->g['uid'] = getCarrierUid();

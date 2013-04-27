@@ -48,3 +48,27 @@
 [04/28 01:00:49] 127.0.0.1, 3306, myapps_development, root, 
 [04/28 01:00:49] sql:set character set utf8
 [04/28 01:00:49] sql:set names utf8
+[04/28 01:03:05] 127.0.0.1, 3306, myapps_development, root, 
+[04/28 01:03:05] sql:set character set utf8
+[04/28 01:03:05] sql:set names utf8
+[04/28 01:03:22] 127.0.0.1, 3306, myapps_development, root, 
+[04/28 01:03:22] sql:set character set utf8
+[04/28 01:03:22] sql:set names utf8
+[04/28 01:05:42] 127.0.0.1, 3306, myapps_development, root, 
+[04/28 01:05:42] sql:set character set utf8
+[04/28 01:05:42] sql:set names utf8
+[04/28 01:05:53] 127.0.0.1, 3306, myapps_development, root, 
+[04/28 01:05:53] sql:set character set utf8
+[04/28 01:05:53] sql:set names utf8
+[04/28 01:05:58] 127.0.0.1, 3306, myapps_development, root, 
+[04/28 01:05:58] sql:set character set utf8
+[04/28 01:05:58] sql:set names utf8
+[04/28 01:23:42] 127.0.0.1, 3306, myapps_development, root, 
+[04/28 01:23:42] sql:set character set utf8
+[04/28 01:23:42] sql:set names utf8
+[04/28 01:27:48] 127.0.0.1, 3306, myapps_development, root, 
+[04/28 01:27:48] sql:set character set utf8
+[04/28 01:27:48] sql:set names utf8
+[04/28 01:30:09] 127.0.0.1, 3306, myapps_development, root, 
+[04/28 01:30:09] sql:set character set utf8
+[04/28 01:30:09] sql:set names utf8
