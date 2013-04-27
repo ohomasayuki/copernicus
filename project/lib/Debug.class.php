@@ -35,7 +35,7 @@ function debug_setComment($flag){
 }
 function debug_setDisplay($flag=true){
   $d = getDebugger();
-  $d->is_display_off = $flag;
+  $d->is_display = $flag;
   //$GLOBALS['g_debug']->is_display_off = $flag;
 }
 function getDebugger(){
@@ -47,7 +47,7 @@ function getDebugger(){
 }
 class Debugger {
   var $is_comment = false;
-  var $is_display_off = 0;
+  var $is_display = 0;
   var $is_log = true;
   /**
    * デバッグ関数。指定文字列を設定によりログに記述したり画面に出力したりする。
@@ -67,16 +67,16 @@ class Debugger {
       $fp = fopen($file,'a');
       fputs($fp, $m);
     }
-    if( isset($g) && ! $g->isPc() ) return;
-    if( ! $this->is_display_off ){
+    //if( isset($g) && ! $g->isPc() ) return;
+    if( ! $this->is_display ){
       if( $_SERVER ){
-	if( $this->is_comment ){
-	  echo '<!--'.$name.':'.$m."-->\n";
-	}else{
-	  echo '<div style="font-size:small;color:green">[debug:'.$name.']'.$m."</div>\n";
-	}
+	    if( $this->is_comment ){
+	      echo '<!--'.$name.':'.$m."-->\n";
+	    }else{
+	      echo '<div style="font-size:small;color:green">[debug:'.$name.']'.$m."</div>\n";
+	    }
       }else{
-	    echo '[debug:'.$name.']'.$m."\n";
+        echo '[debug:'.$name.']'.$m."\n";
       }
     }
   }
