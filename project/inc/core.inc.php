@@ -211,7 +211,7 @@ function my_mb_output_handler($buffer){
     // 管理画面
     return $buffer;
   }
-  $buffer = mb_convert_kana($buffer, 'ka');
+  //$buffer = mb_convert_kana($buffer, 'ka');
   if( ! $buffer ){
     //exitError();
   }
