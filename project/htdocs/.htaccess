@@ -8,6 +8,8 @@ php_value mbstring.substitute_character 0
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^.*php$ static.php [L]
+RewriteRule ^.*html$ static.php [L]
+AddType application/x-httpd-php .htm .html
 
 order deny,allow
 

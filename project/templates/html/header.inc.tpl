@@ -3,7 +3,7 @@
   
   <head>
     <meta charset="utf-8">
-    <title>
+    <title>copernicus
     </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
@@ -24,17 +24,21 @@
     <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
     <script src="http://airve.github.io/js/response/response.min.js"></script>
     <link href="/css/jquery.pageslide.css" rel="stylesheet">
+     <meta name="apple-mobile-web-app-capable" content="yes" />
   </head>
   
   <body>
     <div id="content">
         <h1><a class="open" href="#nav">Menu</a>copernicus</h1>
         <ul id="nav">
-            <li><a href="">TOP</a></li>
-            <li><a href="">製品</a></li>
-            <li><a href="">価格</a></li>
-            <li><a href="">沿革</a></li>
-            <li><a href="">問い合わせ</a></li>
+            <li><a href="/m/top.html">Top</a></li>
+            <li><a href="/m/main.html">Main</a></li>
+            <li><a href="/m/list.html">List</a></li>
+            <li><a href="/m/start.html">Start</a></li>
+            <li><a href="/facebook/oauth_start.php">Login</a></li>
+            <li><a href="/facebook/logout.php">Logout</a></li>
+            <li><a href="javascript:return window.reload()">再読込</a></li>
+            <li><a href="javascript:return history.back()">戻る</a></li>
         </ul>
 
     <div class="container">
@@ -48,7 +52,6 @@
             color: #666; 
             -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
             -webkit-text-size-adjust: none;
-            padding: 0px;
         }
 
         a, a:visited { color: #C30; text-decoration: none;  }
@@ -59,9 +62,9 @@
         #content {
             width: 940px;
             padding: 0px;
-            margin: 0 auto;
+            margin: 0px auto;
         }
-            #content h1 { color: #eee; line-height: 1em; }
+            #content h1 { color: #eee; line-height: 1em; margin:0 0 10 0; }
             
             ul#nav { padding-left: 0; list-style: none; width: 100%; margin-bottom: 40px; }
             ul#nav:after { content: "\0020"; display: block; height: 0; clear: both; visibility: hidden; }

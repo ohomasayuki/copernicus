@@ -45,10 +45,10 @@ function getStaticTemplateFile(){
 	if( strpos($_SERVER['REQUEST_URI'], '?') ){
 		$file = substr($file, 0, strpos($_SERVER['REQUEST_URI'], '?'));
 	}
-	if( strpos($file, '.php') === false ){
+	if( strpos($file, '.php') === false && strpos($file, '.html') === false ){
 		$file .= '/index.php';
 	}
-	$file = '.' . str_replace('.php', '.tpl', $file);
+	$file = '.' . str_replace(array('.php','.html'), '.tpl', $file);
 	$file = str_replace($root_uri, '',$file);
 	return $file;
 }

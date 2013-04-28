@@ -29,3 +29,4 @@ if (!isset($output['access_token'])) {
 $_SESSION['access_token'] = $output['access_token'];
 
 echo 'token=' . $_SESSION['access_token'];
+redirect('../m/start.html');
