@@ -1,9 +1,11 @@
 <?
+// function finish
 global $smarty, $g;
 $smarty->assign('error', $g->error);
 $smarty->assign('report', $g->report);
 $smarty->display('./header.inc.tpl');
 debug($smarty->template_dir . $g->g['template_file'], 'tpl');
+$smarty->assign('debug', "aaaa");// . getDebugger()->message);
 $smarty->display($g->g['template_file']);
 if( $g->g['FOOTER_FILE'] ){
 	$smarty->display($g->g['FOOTER_FILE']);

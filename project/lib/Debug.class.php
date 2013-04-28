@@ -49,6 +49,7 @@ class Debugger {
   var $is_comment = false;
   var $is_display = 0;
   var $is_log = true;
+  var $message = "";
   /**
    * デバッグ関数。指定文字列を設定によりログに記述したり画面に出力したりする。
    *@param m デバッグ出力する文字列
@@ -73,7 +74,7 @@ class Debugger {
 	    if( $this->is_comment ){
 	      echo '<!--'.$name.':'.$m."-->\n";
 	    }else{
-	      echo '<div style="font-size:small;color:green">[debug:'.$name.']'.$m."</div>\n";
+	      $this->message .= '<div style="font-size:small;color:green">[debug:'.$name.']'.$m."</div>\n";
 	    }
       }else{
         echo '[debug:'.$name.']'.$m."\n";
